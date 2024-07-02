@@ -50,7 +50,7 @@ client.once(Events.ClientReady, readyClient => {
 	console.log(`Ready! Logged in as ${readyClient.user.tag}`);
     client.user.setPresence({
         status: "online",  
-        activities: [{ name: `https://squelchtube.virtualdream.live`, type: ActivityType.Watching }],
+        activities: [{ name: `https://squelchtv.virtualdream.live`, type: ActivityType.Watching }],
     });
 });
 

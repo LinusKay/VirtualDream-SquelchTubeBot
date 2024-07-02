@@ -1,1 +1,1 @@
-# Discord Bot: SquelchTube
+# Discord Bot: SquelchTVBot

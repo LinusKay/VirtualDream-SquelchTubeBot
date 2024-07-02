@@ -226,16 +226,16 @@ module.exports = {
 
 		const videoEmbed = new EmbedBuilder()
 			.setColor('#AB38FF')
-			.setAuthor({ name: videoAuthor, url: 'https://squelchtube.virtualdream.live' })
+			.setAuthor({ name: videoAuthor, url: 'https://squelchtv.virtualdream.live' })
 			.setTitle(generateRandomTitle())
-			.setURL('https://squelchtube.virtualdream.live')
-			.setThumbnail(`https://squelchtube.virtualdream.live/src/img/thumb/thumb${thumbNumber}_small.jpg`)
+			.setURL('https://squelchtv.virtualdream.live')
+			.setThumbnail(`https://squelchtv.virtualdream.live/src/img/thumb/thumb${thumbNumber}_small.jpg`)
 			.addFields(
 				{ name: 'Views', value: videoViews, inline: true},
 				{ name: 'Length', value: videoLength, inline: true},
 				{ name: 'Public Reaction', value: videoPublicReaction, inline: true}
 			)
-			.setFooter({ text: 'All videos legal property of SquelchTube Pty Ltd. Available only on Virtual Dream.' });
+			.setFooter({ text: 'All videos legal property of SquelchTV Pty Ltd. Available only on Virtual Dream.' });
 
 		const replyMessage = await interaction.reply({ embeds: [videoEmbed], fetchReply: true  });
 		replyMessage.react('👍');
